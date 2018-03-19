@@ -1,0 +1,81 @@
+/* You can add global styles to this file, and also import other style files */
+$space: 1em;
+$color1: #0A6240;
+$color1__lighten1: lighten($color1, 10);
+$color1__lighten2: lighten($color1, 20);
+
+h1 {
+  color: white;
+}
+
+h3 {
+  span {
+    color: $color1;
+    display: inline-block;
+    width: 2.5em;
+    font-weight: bold;
+  }
+}
+
+body {
+$color1: #0A6240;
+background-color: darken($color1, 5%);
+font-family: 'Lato', sans-serif;
+min-height: 200em;
+}
+.coffee-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.drink {
+  // width: 18em;
+  margin: $space/2;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: $space/2;
+  // box-shadow: 0px 0px 8px 10px #1a1a1ab9;
+  box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.075);
+  img {
+    width: 17em;
+    margin: $space;
+  }
+  &__description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: $space;
+    text-align: center;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin: $space;
+    text-align: center;
+
+  }
+}
+.drink__add {
+  background-color: initial;
+  box-shadow: none;
+}
+
+.drink-size {
+  width: 11em;
+}
+
+.all-backgroud {
+  &__light1 {
+    background-color: saturate($color1, 10);
+    color: white;
+  }
+  &__light2 {
+    background-color: desaturate($color1, 10);
+    color: white;
+  }
+
+
+}
+

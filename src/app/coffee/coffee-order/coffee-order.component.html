@@ -1,0 +1,23 @@
+<div class="coffee-list">
+  <div *ngFor="let coffee of coffees | async" class="drink">
+    <img src="/assets/coffee.jpg">
+    <div class="drink__description">
+      <h3>size:
+        <span>{{ coffee.size }}</span>
+      </h3>
+      <p>drink ref: {{ coffee.id }} </p>
+    </div>
+    <div class="drink__buttons">
+      <button *ngIf="coffee.size==='small'" class="button is-outlined is-info drink-size" (click)="updateCoffee(coffee.id, 'large')">
+        Upgrade to Large
+      </button>
+      <button *ngIf="coffee.size==='large'" class="button is-info drink-size" (click)="updateCoffee(coffee.id, 'small')">
+        Downgrade to Small
+      </button>
+      <button class="button is-danger is-outlined" (click)="deleteCoffee(coffee.id)">delete</button>
+    </div>
+  </div>
+  <div class="drink drink__add">
+    <button class="button is-warning" (click)="createCoffee()">ADD COFFEE</button>
+  </div>
+</div>

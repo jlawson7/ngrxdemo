@@ -1,0 +1,21 @@
+@import '~styles.scss';
+
+.header {
+  padding: $space;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: darken($color1, 10%);
+  font-family: 'Berkshire Swash', cursive;
+  h1 {
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+  }
+  img {
+    height: 100px;
+  }
+}
+.content {
+  padding: $space*2;
+}
