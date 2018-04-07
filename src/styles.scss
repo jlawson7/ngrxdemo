@@ -1,8 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-$space: 1em;
-$color1: #0A6240;
-$color1__lighten1: lighten($color1, 10);
-$color1__lighten2: lighten($color1, 20);
+@import '~sass/variables';
 
 h1 {
   color: white;
