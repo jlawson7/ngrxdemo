@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'variables';
+// @import 'variables';
+
+$space: 1rem;
+$color1: #0A6240;
+
 
 h1 {
   color: white;
@@ -72,7 +76,5 @@ min-height: 200em;
     background-color: desaturate($color1, 10);
     color: white;
   }
-
-
 }
 
