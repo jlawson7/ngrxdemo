@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CoffeeOrderComponent } from './coffee-order/coffee-order.component'
+import { CoffeeOrderComponent } from './coffee-order/coffee-order.component';
 
 import { CommonModule } from '@angular/common';
 import { StoreModule } from '@ngrx/store';

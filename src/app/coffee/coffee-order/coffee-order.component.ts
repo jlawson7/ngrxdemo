@@ -21,14 +21,11 @@ export class CoffeeOrderComponent implements OnInit {
   }
 
   createCoffee() {
-    debugger;
     const coffee: fromCoffee.Coffee = {
       id: new Date().getUTCMilliseconds().toString(),
       size: 'small'
     };
-    debugger;
     this.store.dispatch(new actions.Create(coffee));
-    debugger;
   }
 
   updateCoffee(id, size) {
