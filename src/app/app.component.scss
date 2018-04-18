@@ -1,6 +1,5 @@
 @import 'variables';
 
-
 .header {
   padding: $space;
   display: flex;
@@ -17,6 +16,7 @@
     height: 100px;
   }
 }
+
 .content {
   padding: $space*2;
 }
