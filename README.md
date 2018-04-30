@@ -1,5 +1,7 @@
 # Ngrxdemo
 
+To see a working demo of this project see:  https://stackblitz.com/github/jlawson7/ngrxdemo
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
 
 ## Development server
